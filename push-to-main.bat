@@ -4,8 +4,13 @@ echo.
 
 git add .
 git commit -m "%MESSAGE%"
+
+echo Pulling latest changes...
+git pull origin main --rebase
+
+echo Pushing to main...
 git push origin main
 
 echo.
-echo ✅ Changes pushed to main!
+echo ✅ Changes pulled and pushed to main!
 pause
